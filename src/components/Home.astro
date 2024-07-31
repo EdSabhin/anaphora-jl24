@@ -1,13 +1,15 @@
 ---
 import ArticleCard from "./ArticleCard.astro";
-
-
 ---
 
 <main
   class="w-full flex flex-col justify-center items-center py-12 px-4 md:px-12 gap-20"
 >
-  <ArticleCard />
-  <ArticleCard />
-  <ArticleCard />
+  <ArticleCard url="/post" articleName="ARTICLE ONE" articleHeadline="Lorem ipsum" />
+  <ArticleCard url="" articleName="ARTICLE TWO" articleHeadline="Lorem ipsum" />
+  <ArticleCard
+    url=""
+    articleName="ARTICLE THREE"
+    articleHeadline="Lorem ipsum"
+  />
 </main>

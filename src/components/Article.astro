@@ -1,4 +1,47 @@
 ---
+import "../services/models";
 
+const { url, articleName, articleSubheadline } = Astro.props;
 ---
 
+<main
+  class="w-full flex flex-col justify-center items-center py-12 px-4 md:px-12"
+>
+  <div class="w-full flex flex-col justify-center items-center gap-8">
+    <div class="flex items-center gap-8">
+      <h1 class="cardo-bold text-3xl">AI FIRES</h1>
+      <h3 class="cardo-regular text-rose-400">( DRAFT )</h3>
+    </div>
+
+    <h2 class="playfair-display text-2xl">articleSubheadline</h2>
+  </div>
+  <section class="w-full flex flex-col py-12 px-4 md:px-12 gap-12">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+      repellendus doloribus perspiciatis adipisci molestiae cupiditate
+      consequatur itaque assumenda vitae, maiores atque tempore! Aperiam
+      repellat dolorem explicabo aut quaerat consectetur in. Lorem ipsum, dolor
+      sit amet consectetur adipisicing elit. Ullam deserunt consequatur ipsam
+      rem vitae temporibus, ratione dolor optio autem, perferendis cumque
+      facilis sequi exercitationem voluptatem qui quaerat ex eum voluptatum.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem,
+      quae deserunt recusandae ea optio, explicabo quisquam debitis totam,
+      fugiat minima vitae mollitia earum ipsa eligendi dignissimos ut aliquid
+      omnis repudiandae?
+    </p>
+    <img src="" alt="" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+      repellendus doloribus perspiciatis adipisci molestiae cupiditate
+      consequatur itaque assumenda vitae, maiores atque tempore! Aperiam
+      repellat dolorem explicabo aut quaerat consectetur in. Lorem ipsum, dolor
+      sit amet consectetur adipisicing elit. Ullam deserunt consequatur ipsam
+      rem vitae temporibus, ratione dolor optio autem, perferendis cumque
+      facilis sequi exercitationem voluptatem qui quaerat ex eum voluptatum.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem,
+      quae deserunt recusandae ea optio, explicabo quisquam debitis totam,
+      fugiat minima vitae mollitia earum ipsa eligendi dignissimos ut aliquid
+      omnis repudiandae?
+    </p>
+  </section>
+</main>
