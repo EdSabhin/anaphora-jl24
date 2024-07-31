@@ -27,5 +27,16 @@
   font-style: normal;
 }
 
+@keyframes colorChange {
+  0%, 100% {
+    color: #272422; 
+  }
+  50% {
+    color: #f87171; /* === text-rose-400 */
+  }
+}
 
+.text-color-animate {
+  animation: colorChange 4s infinite;
+}
 

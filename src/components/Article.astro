@@ -1,11 +1,12 @@
 ---
 import "../services/models";
+import ArticleDisplay from "./ArticleDisplay.astro";
 
 const { url, articleName, articleSubheadline } = Astro.props;
 ---
 
 <main
-  class="w-full flex flex-col justify-center items-center py-12 px-4 md:px-12"
+  class="w-full flex flex-col justify-center items-center py-12 px-5 md:px-32"
 >
   <div class="w-full flex flex-col justify-center items-center gap-8">
     <div class="flex items-center gap-8">
@@ -15,7 +16,7 @@ const { url, articleName, articleSubheadline } = Astro.props;
 
     <h2 class="playfair-display text-2xl">articleSubheadline</h2>
   </div>
-  <section class="w-full flex flex-col py-12 px-4 md:px-12 gap-12">
+  <section class="w-full flex flex-col py-12 mb-12 gap-12">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
       repellendus doloribus perspiciatis adipisci molestiae cupiditate
@@ -44,4 +45,5 @@ const { url, articleName, articleSubheadline } = Astro.props;
       omnis repudiandae?
     </p>
   </section>
+  <ArticleDisplay />
 </main>
